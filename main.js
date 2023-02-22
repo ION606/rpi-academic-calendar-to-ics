@@ -5,8 +5,8 @@ const fs = require('fs');
 const express = require('express');
 
 const app = express();
-app.use('/CSS', express.static('./CSS'));
-app.use('/HTML', express.static('./HTML'));
+// app.use('/CSS', express.static('./CSS'));
+// app.use('/HTML', express.static('./HTML'));
 const url = "https://info.rpi.edu/registrar/academic-calendar";
 
 
@@ -95,24 +95,24 @@ async function createIcs() {
 
 
 app.get('/', (req, res) => {
-    res.sendFile('index.html', {root: 'HTML'});
+    res.sendFile('index.html', {root: '.'});
 });
 
 app.get('/calendar', (req, res) => {
-    res.sendFile('calendar.html', {root: 'HTML'});
+    res.sendFile('calendar.html', {root: '.'});
 })
 
 
 app.get('/calendar.css', (req, res) => {
-    return res.sendFile('calendar.css', { root: 'CSS' });
+    return res.sendFile('calendar.css', { root: '.' });
 });
 
 app.get('/main.css', (req, res) => {
-    return res.sendFile('main.css', { root: 'CSS' });
+    return res.sendFile('main.css', { root: '.' });
 });
 
 app.get('/navbar.css', (req, res) => {
-    return res.sendFile('navbar.css', { root: 'CSS' });
+    return res.sendFile('navbar.css', { root: '.' });
 });
 
 
