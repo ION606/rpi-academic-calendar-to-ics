@@ -121,4 +121,6 @@ app.get('/createCalendar', async (req, res) => {
     res.send(await createIcs())
 });
 
-app.listen(5000, () => console.log(`App listening on port ${port}`));
+
+const port = 5000;
+app.listen(port, () => console.log(`App listening on port ${port}`));
