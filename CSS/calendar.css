@@ -1,0 +1,38 @@
+.calDownload {
+    color: #e7e5e5;
+    background-color: #2d63c8;
+    font-size: 19px;
+    border: 1px solid #2d63c8;
+    padding: 15px 50px;
+    cursor: pointer;
+}
+
+
+.calDownload:hover {
+    color: #2d63c8;
+    background-color: #e7e5e5;
+}
+
+
+.ogCal {
+        color: #e7e5e5;
+        background-color: #c82d31;
+        font-size: 20px;
+        border: 1px solid #2d63c8;
+        padding: 10px 45px;
+        letter-spacing: 1px;
+        cursor: pointer;
+}
+
+
+.ogCal:hover {
+    color: #c82d31;
+    background-color: #e7e5e5;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 120;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
