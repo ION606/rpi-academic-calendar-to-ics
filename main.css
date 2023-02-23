@@ -2,3 +2,13 @@ body {
     /* color: rgb(148, 0, 0); */
     color: rgb(252, 252, 252);
 }
+
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    margin: 10px;
+}
